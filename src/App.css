@@ -1,0 +1,113 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(60deg, rgb(45, 45, 45), rgb(162, 0, 255)); 
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    min-width: 50vw;
+    margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2f2f; 
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25); 
+  padding: 40px;
+  min-height: 100vh;
+  min-width: 40vw;
+  max-width: 50vw;
+  width: 100%;
+}
+
+.App-header h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #cccccc;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px; 
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-color: #444444; 
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #9000ff;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 30px; 
+  background-color: #9000ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #8001d5; 
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #6000b9; 
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bolder;
+  word-break: break-word;
+}
+
+p.your-fantasy-team-name {
+  background-color: #3a3a3a; 
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #9000ff;
+  color: #ffffff;
+  font-weight: bolder;
+}
