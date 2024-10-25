@@ -61,5 +61,5 @@ def generate_response():
         return jsonify({"error": team_name}), status_code
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5050)
+    app.run(debug=True, port=8080)
 
