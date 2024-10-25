@@ -20,7 +20,7 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://127.0.0.1:5050/generate', { prompt });
+      const response = await axios.post('http://127.0.0.1:8080/generate', { prompt });
       if (response.data && response.data.team_name) {
         setTeamName(response.data.team_name);
       } else {
