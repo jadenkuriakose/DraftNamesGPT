@@ -1,0 +1,5 @@
+[build]
+command = "pip install -r backend/requirements.txt"
+
+[deploy]
+command = "python3 backend/main.py"
